@@ -62,7 +62,11 @@ class GpxRoute {
   }
 }
 
-void main(List<String> args) {
+void main(List<String> args) async {
   GpxRoute route = GpxRoute();
-  route.loadFromGpxFile("data.gpx");
+  await route.loadFromGpxFile("data.gpx");
+  print("Length is: ${route.points.length}");
+  for (GpxPoint p in route.points) {
+    p.printGpxPoint();
+  }
 }
