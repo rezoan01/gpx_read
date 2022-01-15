@@ -64,5 +64,5 @@ class GpxRoute {
 
 void main(List<String> args) {
   GpxRoute route = GpxRoute();
-  route.loadFromGpxFile("../data.gpx");
+  route.loadFromGpxFile("data.gpx");
 }
