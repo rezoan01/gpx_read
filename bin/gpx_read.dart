@@ -69,4 +69,5 @@ void main(List<String> args) async {
   for (GpxPoint p in route.points) {
     p.printGpxPoint();
   }
+  print("Random");
 }
